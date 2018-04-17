@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>To-do</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <script src="main.js"></script>
 </head>
@@ -12,7 +13,7 @@
   
   <div class="container">
     <h1>your to-do list!</h1>
-    <input type="text" id="userInput">
+    <input type="text" id="userInput" onkeydown="Javascript: if (event.keyCode === 13) addItem();">
     <input type='button' onclick='addItem()'   value='Submit'/> 
 
     <ul class="list" id='list'>

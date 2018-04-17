@@ -2,16 +2,30 @@
   margin: 0 auto;
   width: 360px;
   border: 3px solid #323643;
+  box-shadow: 0px 0px 1px #555d64;
   text-align: center;
+  margin-top: 100px;
+  background-color: #f7f7f7;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .list {
-  text-align: center;
+  text-align: left;
   list-style-type: none;
 }
 
 .list > li {
-  border-bottom: 1px solid #323643;
+  padding: 0;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.list > li:nth-child(even) {
+  background: #ffffff;;
+}
+.list > li:hover {
+  color: white;
+  background-color:#ff0000;
 }
 
 body {
