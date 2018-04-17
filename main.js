@@ -1,14 +1,12 @@
 function addItem() {
-  let ul = document.getElementById('list');
-  let userInput = document.getElementById('userInput');
+  let ul = document.querySelector('#list');
+  let userInput = document.querySelector('#userInput');
   let li = document.createElement('li');
   li.appendChild(document.createTextNode(userInput.value));
   ul.appendChild(li);
+  li.onclick = removeItem;
 }
 
-function removeItem() {
-  let listItem = document.getElementByClassName('item');
-  listItem.addEventListener('click', function() {
-    
-  });
+function removeItem(e) {
+  e.target.parentElement.removeChild(e.target);
 }
