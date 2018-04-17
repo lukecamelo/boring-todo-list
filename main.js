@@ -5,6 +5,7 @@ function addItem() {
   li.appendChild(document.createTextNode(userInput.value));
   ul.appendChild(li);
   li.onclick = removeItem;
+  userInput.value = '';
 }
 
 function removeItem(e) {
