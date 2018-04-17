@@ -1,0 +1,19 @@
+.container {
+  margin: 0 auto;
+  width: 360px;
+  border: 3px solid #323643;
+  text-align: center;
+}
+
+.list {
+  text-align: center;
+  list-style-type: none;
+}
+
+.list > li {
+  border-bottom: 1px solid #323643;
+}
+
+body {
+  background-image: url('hip-square.png');
+}
